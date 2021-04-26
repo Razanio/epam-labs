@@ -1,1 +1,1 @@
-# first-lab
+# epam-labs
