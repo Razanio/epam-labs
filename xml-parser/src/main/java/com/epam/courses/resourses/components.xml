@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.example.org/components" xsi:schemaLocation="http://www.example.org/components components.xsd">
+    <component id="a&amp;1">
+        <name>CPU Intel Core i3-10100F</name>
+        <origin>USA</origin>
+        <price>337.99</price>
+        <feature>
+            <peripheral>false</peripheral>
+            <energy-consumption>65</energy-consumption>
+            <cooler>false</cooler>
+            <purpose>COMPUTINGLOGIC</purpose>
+        </feature>
+        <critical>true</critical>
+    </component>
+    <component id="a&amp;2">
+        <name>RAM Samsung 8GB DDR4</name>
+        <origin>South Korea</origin>
+        <price>144.99</price>
+        <feature>
+            <peripheral>false</peripheral>
+            <energy-consumption>3</energy-consumption>
+            <cooler>false</cooler>
+            <purpose>MEMORY</purpose>
+        </feature>
+        <critical>true</critical>
+    </component>
+    <component id="a&amp;3">
+        <name>Palit GeForce GTX 1660 Super GP 6GB GDDR6</name>
+        <origin>USA</origin>
+        <price>1949.49</price>
+        <feature>
+            <peripheral>true</peripheral>
+            <energy-consumption>450</energy-consumption>
+            <cooler>true</cooler>
+            <purpose>COMPUTINGLOGIC</purpose>
+            <port>
+                <HDMI>2</HDMI>
+                <USB>1</USB>
+            </port>
+        </feature>
+        <critical>false</critical>
+    </component>
+    <component id="a&amp;4">
+        <name>Seagate Skyhawk 6TB</name>
+        <origin>USA</origin>
+        <price>558.99</price>
+        <feature>
+            <peripheral>true</peripheral>
+            <energy-consumption>9.6</energy-consumption>
+            <cooler>false</cooler>
+            <purpose>MEMORY</purpose>
+        </feature>
+        <critical>false</critical>
+    </component>
+    <component id="a&amp;5">
+        <name>Acoustic system Sony SS-CS5</name>
+        <origin>Japan</origin>
+        <price>488.67</price>
+        <feature>
+            <peripheral>true</peripheral>
+            <energy-consumption>100</energy-consumption>
+            <cooler>true</cooler>
+            <purpose>MULTIMEDIA</purpose>
+            <port>
+                <USB>2</USB>
+            </port>
+        </feature>
+        <critical>false</critical>
+    </component>
+    <component id="a&amp;6">
+        <name>Monitor Acer Predator X34</name>
+        <origin>Taiwan</origin>
+        <price>3761.46</price>
+        <feature>
+            <peripheral>true</peripheral>
+            <energy-consumption>70</energy-consumption>
+            <cooler>false</cooler>
+            <purpose>OUTPUTINPUT</purpose>
+            <port>
+                <HDMI>4</HDMI>
+                <USB>1</USB>
+                <LPT>3</LPT>
+            </port>
+        </feature>
+        <critical>false</critical>
+    </component>
+</components>

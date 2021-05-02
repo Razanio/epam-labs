@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/components"
+        xmlns:tns="http://www.example.org/components" elementFormDefault="qualified">
+    <element name="components">
+        <complexType>
+            <sequence>
+                <element name="component" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="name" type="string"/>
+                            <element name="origin" type="string"/>
+                            <element name="price" type="double"/>
+                            <element name="feature">
+                               <complexType>
+                                  <sequence>
+                                      <element name="peripheral" type="boolean"/>
+                                      <element name="energy-consumption" type="double"/>
+                                      <element name="cooler" type="boolean"/>
+                                      <element name="purpose">
+                                          <simpleType>
+                                              <restriction base="string">
+                                                  <enumeration value="OUTPUT" />
+                                                  <enumeration value="INPUT" />
+                                                  <enumeration value="OUTPUTINPUT" />
+                                                  <enumeration value="MULTIMEDIA" />
+                                                  <enumeration value="MEMORY" />
+                                                  <enumeration value="COMPUTINGLOGIC" />
+                                              </restriction>
+                                          </simpleType>
+                                      </element>
+                                      <element name="port" minOccurs="0">
+                                          <complexType>
+                                              <sequence>
+                                                  <element name="HDMI" minOccurs="0">
+                                                      <simpleType>
+                                                          <restriction base="nonNegativeInteger"/>
+                                                      </simpleType>
+                                                  </element>
+                                                  <element name="COM" minOccurs="0">
+                                                      <simpleType>
+                                                          <restriction base="nonNegativeInteger"/>
+                                                      </simpleType>
+                                                  </element>
+                                                  <element name="USB" minOccurs="0">
+                                                      <simpleType>
+                                                          <restriction base="nonNegativeInteger"/>
+                                                      </simpleType>
+                                                  </element>
+                                                  <element name="LPT" minOccurs="0">
+                                                      <simpleType>
+                                                          <restriction base="nonNegativeInteger"/>
+                                                      </simpleType>
+                                                  </element>
+                                              </sequence>
+                                          </complexType>
+                                      </element>
+                                  </sequence>
+                               </complexType>
+                            </element>
+                            <element name="critical" type="boolean"/>
+                        </sequence>
+                        <attribute name="id" type="string" use="required" />
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+</schema>
