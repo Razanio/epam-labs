@@ -86,13 +86,13 @@ public class Component {
         builder.append("ID: ").append(getIdentity()).append('\n');
         builder.append("Name: ").append(getName()).append('\n');
         builder.append("Origin: ").append(getOrigin()).append('\n');
-        builder.append("Price: ").append(getPrice()).append('\n');
+        builder.append("Price: ").append(getPrice()).append("$").append('\n');
         builder.append("Features:\n");
         for(Feature feature: getFeatures()){
             builder.append('\t').append(feature.getName()).append(": ").append(feature.getValue()).append('\n');
         }
         builder.append("\tPurpose: ").append(getPurposeType().getName()).append('\n');
-        if(ports.size() != 0) {
+       if(ports.size() != 0) {
             builder.append("\tPorts:\n");
             for (Map.Entry<PortType, Integer> item : ports.entrySet()) {
                 builder.append("\t\t").append(item.getKey()).append(": ").append(item.getValue()).append('\n');

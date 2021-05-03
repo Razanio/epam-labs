@@ -22,6 +22,9 @@
             <energy-consumption>3</energy-consumption>
             <cooler>false</cooler>
             <purpose>MEMORY</purpose>
+            <port>
+                <COM>3</COM>
+            </port>
         </feature>
         <critical>true</critical>
     </component>

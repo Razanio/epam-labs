@@ -54,13 +54,13 @@ public class ComponentXMLReader {
                             component.getFeatures().add(cooler);
                         } else if("purpose".equals(tagName)) {
                             component.setPurposeType(PurposeType.valueOf(reader.getElementText()));
-                        } else if("hdmi".equals(tagName)){
+                        } else if("HDMI".equals(tagName)){
                             ports.put(PortType.HDMI, Integer.parseInt(reader.getElementText()));
-                        } else if("com".equals(tagName)){
+                        } else if("COM".equals(tagName)){
                             ports.put(PortType.COM, Integer.parseInt(reader.getElementText()));
-                        } else if("usb".equals(tagName)){
+                        } else if("USB".equals(tagName)){
                             ports.put(PortType.USB, Integer.parseInt(reader.getElementText()));
-                        } else if("lpt".equals(tagName)) {
+                        } else if("LPT".equals(tagName)) {
                             ports.put(PortType.LPT, Integer.parseInt(reader.getElementText()));
                         } else if("critical".equals(tagName)){
                             component.setCritical(Boolean.parseBoolean(reader.getElementText()));
@@ -72,7 +72,7 @@ public class ComponentXMLReader {
                         if ("component".equals(tagName)) {
                             component.setPorts(ports);
                             components.add(component);
-                            ports = new HashMap<>();
+                             ports = new HashMap<>();
                         }
                         break;
                     }
