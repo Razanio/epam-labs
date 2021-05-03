@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95d5ceeb-c2e3-4a6c-bfd7-778e3be6f86a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/courses/domain/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/courses/domain/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/courses/resourses/components-new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/courses/resourses/components-new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/courses/resourses/components.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/courses/resourses/components.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/courses/xml/ComponentXMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/courses/xml/ComponentXMLReader.java" afterDir="false" />
-    </list>
+    <list default="true" id="95d5ceeb-c2e3-4a6c-bfd7-778e3be6f86a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
