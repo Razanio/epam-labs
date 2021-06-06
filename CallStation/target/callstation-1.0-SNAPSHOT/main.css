@@ -1,0 +1,94 @@
+body{
+    background-color: #CC4400;
+}
+table {
+    border-collapse: collapse;
+}
+
+td.empty {
+    padding: 0;
+}
+
+th, td.content {
+    border: 1px solid black;
+}
+
+th {
+    padding: 5px 10px;
+}
+
+td.content {
+    padding: 5px 30px 5px 10px;
+}
+
+form {
+    width: 600px;
+    padding: 0 20px 20px 20px;
+}
+
+form label, form input, form select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+}
+
+form label {
+    margin-top: 32px;
+}
+
+a.edit, a.add-button, a.back, form button {
+    display: inline-block;
+    border: 0;
+    min-width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: #333;
+    outline: 0;
+}
+
+a.add-button, a.back, form button {
+    margin: 32px 5px 0 0;
+    padding: 0 5px 0 32px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+form button {
+    cursor: pointer;
+}
+
+form button[disabled] {
+    color: #888;
+    opacity: 0.5;
+    cursor: default;
+    box-shadow: none;
+}
+
+a.edit, a.add-button, a.back {
+    text-decoration: none;
+}
+
+a.edit {
+    background: url('WEB-INF/images/edit.png');
+}
+
+a.add-button {
+    background: #0C4 url('WEB-INF/images/add.png') no-repeat;
+}
+
+a.back {
+    background: #04C url('WEB-INF/images/back.png') no-repeat;
+}
+
+form button.save {
+    background: #0C4 url('WEB-INF/images/save.png') no-repeat;
+}
+
+form button.delete {
+    background: #C40 url('WEB-INF/images/delete.png') no-repeat;
+}
+
+form button.password-reset {
+    background: #FC4 url('WEB-INF/images/reset.png') no-repeat;
+}
