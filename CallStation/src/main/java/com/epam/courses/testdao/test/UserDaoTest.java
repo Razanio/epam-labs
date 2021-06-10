@@ -66,7 +66,7 @@ public class UserDaoTest implements DaoTest<UserDao> {
         try {
             connection = Connector.getConnection();
             userDao.setConnection(connection);
-            /*System.out.println("UserDao.read(1L):");
+            System.out.println("UserDao.read(1L):");
             userDaoTest.readTest(userDao);
             System.out.println("UserDao.readAll():");
             userDaoTest.readAllTest(userDao);
@@ -75,12 +75,11 @@ public class UserDaoTest implements DaoTest<UserDao> {
             System.out.println("UserDao.readAll():");
             userDaoTest.readAllTest(userDao);
             System.out.println("UserDao.update():");
-            userDaoTest.updateTest(userDao, id);*/
+            userDaoTest.updateTest(userDao, id);
             System.out.println("UserDao.readAll():");
             userDaoTest.readAllTest(userDao);
             System.out.println("UserDao.delete():");
-            //userDaoTest.deleteTest(userDao, id);
-            userDaoTest.deleteTest(userDao, 1L);
+            userDaoTest.deleteTest(userDao, id);
             System.out.println("UserDao.readAll():");
             userDaoTest.readAllTest(userDao);
         } catch(SQLException | DaoException e) {

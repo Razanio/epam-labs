@@ -9,7 +9,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<u:page title="Список подключенных услуг">
+<u:page title="Список аккаунтов">
     <h1>Телефонная станция</h1>
     <h2>${title}</h2>
     <h4>Пользователь: ${user.login}</h4>

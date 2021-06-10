@@ -54,7 +54,7 @@ public class AccountDaoTest implements DaoTest<AccountDao> {
             account.setStatus(true);
             id = dao.create(account);
 
-            System.out.printf("\tUser successfully added with id=%d\n", id);
+            System.out.printf("\tAccount successfully added with id=%d\n", id);
 
         } catch(SQLException | DaoException e) {
             e.printStackTrace();
@@ -70,7 +70,7 @@ public class AccountDaoTest implements DaoTest<AccountDao> {
         account.setBalance(20.0);
         account.setStatus(false);
         dao.update(account);
-        System.out.println("\tUser was successfully updated");
+        System.out.println("\tAccount was successfully updated");
     }
 
     @Override
@@ -87,7 +87,7 @@ public class AccountDaoTest implements DaoTest<AccountDao> {
 
             dao.delete(id);
             userDao.delete(client_id);
-            System.out.println("\tUser was successfully deleted");
+            System.out.println("\tAccount was successfully deleted");
 
         } catch(SQLException | DaoException e) {
             e.printStackTrace();
@@ -105,21 +105,21 @@ public class AccountDaoTest implements DaoTest<AccountDao> {
         try {
             connection = Connector.getConnection();
             accountDao.setConnection(connection);
-            System.out.println("UserDao.read(1L):");
+            System.out.println("AccountDao.read(1L):");
             accountDaoTest.readTest(accountDao);
-            System.out.println("UserDao.readAll():");
+            System.out.println("AccountDao.readAll():");
             accountDaoTest.readAllTest(accountDao);
-            System.out.println("UserDao.create():");
+            System.out.println("AccountDao.create():");
             Long id = accountDaoTest.createTest(accountDao);
-            System.out.println("UserDao.readAll():");
+            System.out.println("AccountDao.readAll():");
             accountDaoTest.readAllTest(accountDao);
-            System.out.println("UserDao.update():");
+            System.out.println("AccountDao.update():");
             accountDaoTest.updateTest(accountDao, id);
-            System.out.println("UserDao.readAll():");
+            System.out.println("AccountDao.readAll():");
             accountDaoTest.readAllTest(accountDao);
-            System.out.println("UserDao.delete():");
+            System.out.println("AccountDao.delete():");
             accountDaoTest.deleteTest(accountDao, id);
-            System.out.println("UserDao.readAll():");
+            System.out.println("AccountDao.readAll():");
             accountDaoTest.readAllTest(accountDao);
         } catch(SQLException | DaoException e) {
             e.printStackTrace();

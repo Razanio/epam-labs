@@ -11,14 +11,18 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <u:page title="Главная страница">
     <h1>Телефонная станция</h1>
-    <tr>
-        <th>Здраствуйте</th>
-        <th>"${user.login}"</th>
-    </tr>
-    <tr>
-        <th>Ваш баланс равен: </th>
-        <th>"${account.balance}"</th>
-    </tr>
+    <h4>Здраствуйте "${user.login}"</h4>
+    <h4>Статус аккаунта:
+        <c:choose>
+            <c:when test="${(account.status==true)}">
+                Активен
+            </c:when>
+            <c:otherwise>
+                Заблокирован
+            </c:otherwise>
+        </c:choose>
+    </h4>
+    <h4>Ваш баланс равен: "${account.balance}"</h4>
     <ul>
         <li><a href="addons.html">Список услуг</a></li>
         <li><a href="addbalance.html">Пополнить баланс</a></li>

@@ -17,6 +17,7 @@
             </tr>
         </c:forEach>
     </table>
+    <br>
     <form action="login.html" method="get">
         <button class="cancel">Авторизоваться</button>
     </form>

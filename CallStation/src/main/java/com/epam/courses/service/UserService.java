@@ -18,8 +18,6 @@ public interface UserService {
 
     void changePassword(Long userId, String oldPassword, String newPassword) throws ServiceException;
 
-    boolean canDelete(Long id) throws ServiceException;
-
     void delete(Long id) throws ServiceException;
 
     List<User> getFreeUsers() throws ServiceException;

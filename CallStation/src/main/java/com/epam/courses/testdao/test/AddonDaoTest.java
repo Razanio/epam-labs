@@ -31,10 +31,10 @@ public class AddonDaoTest implements DaoTest<AddonDao> {
     @Override
     public Long createTest(AddonDao dao) throws DaoException {
         Addon service = new Addon();
-        service.setName("NEW-service");
+        service.setName("NEW-addon");
         service.setCost(0.0);
         Long id = dao.create(service);
-        System.out.printf("\tUser successfully added with id=%d\n", id);
+        System.out.printf("\tAddon successfully added with id=%d\n", id);
         return id;
     }
 
@@ -42,16 +42,16 @@ public class AddonDaoTest implements DaoTest<AddonDao> {
     public void updateTest(AddonDao dao, Long id) throws DaoException {
         Addon service = new Addon();
         service.setId(id);
-        service.setName("CHANGED-service");
+        service.setName("CHANGED-addon");
         service.setCost(24.6);
         dao.update(service);
-        System.out.println("\tUser was successfully updated");
+        System.out.println("\tAddon was successfully updated");
     }
 
     @Override
     public void deleteTest(AddonDao dao, Long id) throws DaoException {
         dao.delete(id);
-        System.out.println("\tUser was successfully deleted");
+        System.out.println("\tAddon was successfully deleted");
     }
 
     @Override
@@ -63,21 +63,21 @@ public class AddonDaoTest implements DaoTest<AddonDao> {
         try {
             connection = Connector.getConnection();
             serviceDao.setConnection(connection);
-            System.out.println("UserDao.read(1L):");
+            System.out.println("AddonDao.read(1L):");
             serviceDaoTest.readTest(serviceDao);
-            System.out.println("UserDao.readAll():");
+            System.out.println("AddonDao.readAll():");
             serviceDaoTest.readAllTest(serviceDao);
-            System.out.println("UserDao.create():");
+            System.out.println("AddonDao.create():");
             Long id = serviceDaoTest.createTest(serviceDao);
-            System.out.println("UserDao.readAll():");
+            System.out.println("AddonDao.readAll():");
             serviceDaoTest.readAllTest(serviceDao);
-            System.out.println("UserDao.update():");
+            System.out.println("AddonDao.update():");
             serviceDaoTest.updateTest(serviceDao, id);
-            System.out.println("UserDao.readAll():");
+            System.out.println("AddonDao.readAll():");
             serviceDaoTest.readAllTest(serviceDao);
-            System.out.println("UserDao.delete():");
+            System.out.println("AddonDao.delete():");
             serviceDaoTest.deleteTest(serviceDao, id);
-            System.out.println("UserDao.readAll():");
+            System.out.println("AddonDao.readAll():");
             serviceDaoTest.readAllTest(serviceDao);
         } catch(SQLException | DaoException e) {
             e.printStackTrace();

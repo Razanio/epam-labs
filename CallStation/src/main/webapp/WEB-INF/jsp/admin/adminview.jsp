@@ -4,10 +4,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <u:page title="Главная страница">
   <h1>Телефонная станция</h1>
-  <tr>
-    <th>Здраствуйте</th>
-    <th>"${user.login}"</th>
-  </tr>
+  <h4>Здраствуйте "${user.login}"</h4>
   <ul>
     <li><a href="account/accounts.html">Список абонентов</a></li>
     <li><a href="addon/addons.html">Список услуг</a></li>
